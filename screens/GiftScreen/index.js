@@ -17,7 +17,7 @@ const Gift = () => (
   <Container>
     <Tabs renderTabBar={() => <ScrollableTab />}>
       {GIFT_TAB.map(tab => (
-        <Tab
+        <Tab // this line makes a warning due to https://github.com/GeekyAnts/NativeBase/issues/3358 this issue
           key={tab.id}
           heading={
             <TabHeading>
